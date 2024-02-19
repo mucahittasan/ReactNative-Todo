@@ -16,12 +16,17 @@ const Sidebar = (props: DrawerContentComponentProps) => {
   const { state, navigation } = props
   const currentRoute = state.routeNames[state.index]
 
+  // Close sidebar
   const handlePressBackButton = useCallback(() => {
     navigation.closeDrawer()
   }, [navigation])
+
+  // Go to the Main page
   const handlePressMenuMain = useCallback(() => {
     navigation.navigate('Main')
   }, [navigation])
+
+  // Go to the About page
   const handlePressMenuAbout = useCallback(() => {
     navigation.navigate('About')
   }, [navigation])

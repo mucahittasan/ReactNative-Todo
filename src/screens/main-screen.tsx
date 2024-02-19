@@ -24,7 +24,9 @@ export default function MainScreen() {
   const [data, setData] = useState(initialData)
   const [editingItemId, setEditingItemId] = useState<string | null>(null)
 
+  // Toggle for item is done
   const handleToggleTaskItem = useCallback(item => {
+    // First we get all prevData and finding current item index and updated done
     setData(prevData => {
       const newData = [...prevData]
       const index = prevData.indexOf(item)
@@ -35,7 +37,10 @@ export default function MainScreen() {
       return newData
     })
   }, [])
+
+  // This is for change the item text
   const handleChangeTaskItemSubject = useCallback((item, newSubject) => {
+    // First we get all prevData and finding current item index and updated text
     setData(prevData => {
       const newData = [...prevData]
       const index = prevData.indexOf(item)
@@ -46,12 +51,17 @@ export default function MainScreen() {
       return newData
     })
   }, [])
+
+  // When we are finish for updating text, setEditinItemId will be null and input for changing text is will be gone
   const handleFinishEditingTaskItem = useCallback(_item => {
     setEditingItemId(null)
   }, [])
+
+  // When clicking the item, the current item will be editible
   const handlePressTaskItemLabel = useCallback(item => {
     setEditingItemId(item.id)
   }, [])
+
   const handleRemoveItem = useCallback(item => {
     setData(prevData => {
       const newData = prevData.filter(i => i !== item)

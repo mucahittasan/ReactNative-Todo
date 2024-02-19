@@ -6,6 +6,16 @@ A smoothly animated ToDo app built with React Native.
 
 In this project, I utilized **React Native**, **Expo**, **Native Base**, **Styled Components**, **React Reanimated**, and many other extensions. I aimed to create a visually appealing design with careful attention to animations and appearance. I hope you enjoy exploring my project!
 
+## Images of the Project
+
+<div align="center">
+    <img width="200" src = 'https://github.com/mucahittasan/Job-Search-ReactNative-App/assets/88967412/d2368a0b-2856-4b3d-ae16-bf228f9ebc73' />
+    <img width="200" src = 'https://github.com/mucahittasan/Job-Search-ReactNative-App/assets/88967412/5264e88f-32ce-447c-bd4a-a33be68b2289' />
+    <img width="200" src = 'https://github.com/mucahittasan/Job-Search-ReactNative-App/assets/88967412/af8b1b09-59b6-4916-a822-f934e9714efe' />
+    <img width="200" src = 'https://github.com/mucahittasan/Job-Search-ReactNative-App/assets/88967412/f0bca153-c817-4b4b-a81a-5c0e7572eee0' />
+
+</div>
+
 ## Installation
 
 Make sure you have [Node.js](https://nodejs.org/) and [Expo CLI](https://docs.expo.dev/get-started/installation/) installed.
